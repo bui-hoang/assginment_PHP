@@ -5,7 +5,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
     $phone = $_POST['phone'];
 
-    // Chuẩn bị và thực thi câu lệnh đã chuẩn bị
     $stmt = $conn->prepare("INSERT INTO contacts (name, phone) VALUES (?, ?)");
     $stmt->bind_param("ss", $name, $phone);
     

@@ -3,7 +3,6 @@ include 'functions/db.php';
 
 $id = $_GET['id'];
 
-// Chuẩn bị và thực thi câu lệnh đã chuẩn bị
 $stmt = $conn->prepare("DELETE FROM contacts WHERE id = ?");
 $stmt->bind_param("i", $id);
 

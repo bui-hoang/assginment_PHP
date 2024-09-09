@@ -1,7 +1,6 @@
 <?php
 include 'functions/db.php';
 
-// Lấy tất cả các danh bạ
 $sql = "SELECT * FROM contacts";
 $result = $conn->query($sql);
 ?>
